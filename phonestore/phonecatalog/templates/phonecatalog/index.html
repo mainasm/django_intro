@@ -1,0 +1,11 @@
+{% if phone_list %}
+<ul>
+    {% for phone in phone_list %}
+    <li>
+        <a href="/phones/{{ phone.id }}/">{{ phone.make}} {{ phone.phone_name}}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No phone available currently</p>
+{% endif %}
