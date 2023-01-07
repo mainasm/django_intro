@@ -1,3 +1,4 @@
+<h1>PhoneStore 2022 Phones</h1>
 {% if phone_list %}
 <ul>
     {% for phone in phone_list %}
@@ -9,3 +10,4 @@
 {% else %}
 <p>No phone available currently</p>
 {% endif %}
+<p>There are {{ num_phones }} phones in our catalog currently</p>

@@ -15,6 +15,7 @@ class PhoneMake(models.Model):
 class Phone(models.Model):
     make = models.ForeignKey(PhoneMake, on_delete=models.RESTRICT)
     phone_name = models.CharField(max_length=50)
+    operating_system = models.CharField(max_length=50, null=True)
     launch_date = models.DateTimeField('date launched', null=True)
     price = models.IntegerField(default=0)
 
